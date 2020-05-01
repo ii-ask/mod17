@@ -22,7 +22,7 @@ static uint64_t random_u64(uint64_t *seed) {
 }
 
 /* Only for testing. Such solution would get 0 points. */
-static __noinline int mod17_iter(int64_t x) {
+static __noinline int mod17_iter(uint64_t x) {
   return x % 17;
 }
 

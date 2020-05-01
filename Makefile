@@ -11,7 +11,7 @@ MCA = /usr/bin/llvm-mca-8
 PROCEDURE ?= mod17.s:mod17
 ILIMIT ?= 50
 MAXSIZE ?= 256
-BADINSNS ?= '*mul*,*div*,*call*'
+BADINSNS ?= '*mul*,*div*,*madd*,*msub*,*rem*,*call*'
 
 MAXINSNS = $(ILIMIT)
 
