@@ -51,9 +51,9 @@
       "points": 2
     },
     {
-      "name": "Test zrandomizowany (bez instrukcji skoku warunkowego)",
+      "name": "Test zrandomizowany (bez instrukcji skoku warunkowego, maksymalnie 35 instrukcji)",
       "setup": "",
-      "run": "make test-random BADINSNS='*cnt*,j*,call*'",
+      "run": "make test-random BADINSNS='*mul*,*div*,*madd*,*msub*,*rem*,*call*,j*' ILIMIT=35",
       "input": "",
       "output": "",
       "comparison": "included",

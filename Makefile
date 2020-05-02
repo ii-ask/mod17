@@ -36,16 +36,16 @@ main: main.o mod17.o
 	$(CC) $(LDFLAGS) -o $@ $^
 
 test-1: check
-	$(RUN) 0xFFFFFFFFFFFFFFFF
+	$(RUN) 0xF0F0F0F0F0F0F0F0
 
 test-2: check
-	$(RUN) 0x0
+	$(RUN) 0x0F0F0F0F0F0F0F0F
 
 test-3: check
-	$(RUN) 0x10000
+	$(RUN) 0x17979cfe372d6652
 
 test-4: check
-	$(RUN) 0x001F089ADF39FE00
+	$(RUN) 0x0
 
 test-random: MAXINSNS=$(shell echo $$(($(ILIMIT)*1000))) 
 test-random: check
